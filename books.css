@@ -1,0 +1,214 @@
+#topnav {
+  background-color: #FF7F50;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+#topnav a {
+  float: left;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px 12px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+#topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+#topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+#topnav button[type=submit] {
+  float: right;
+  padding: 6px;
+  margin-top: 8px;
+  margin-right:-271px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+#topnav button[type=submit]:hover {
+  background: #ccc;
+}
+
+#topnav input[type=text] {
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 90px;
+  font-size: 17px;
+  height: 30px;
+  width: 200px;
+}
+
+
+
+table {
+  border-collapse: collapse;
+  border:none;
+  margin: 25px 0;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  width: 100px;
+  height:80px;
+  margin-left: auto;
+  margin-right: auto;
+      }
+th {
+  background-color:#FFFF8F;
+  color: black;
+  text-align: left;
+   }
+th,td {
+  padding: 10px 12px;
+      }
+tr:nth-child(even){
+  background-color:#d6d6c2;
+                  }
+#act {
+  display: inline-block;
+  border-radius: 5px;
+  background-color: ;
+  padding: 20px;
+  width:50%;
+  
+  
+}
+input[type=text], select,[type=date],input[type=number],input[type=time],input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  }
+  input[type=submit] {
+  width: 100%;
+  background-color:#FFFF8F;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+#demo{
+  position:relative;
+  left:750px;
+  font-family: sans-serif;
+  font-size:18px;
+     }
+#searchbox{
+  width: 200px;
+  margin-left: 650px;
+}
+#hov a:hover {
+  background-color: #ddd;
+  color: black;
+  cursor: pointer;
+}
+input[type=text], select,[type=date],input[type=number],input[type=time],input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  }
+  input[type=submit] {
+  width: 100%;
+  background-color:#FFFF8F;
+  color: black;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight:bold;
+}
+#demo{
+  position:relative;
+  left:750px;
+  font-family: sans-serif;
+  font-size:18px;
+     }
+#searchbox{
+  width: 200px;
+  margin-left: 580px;
+}
+#hov a:hover {
+  background-color: #ddd;
+  color: black;
+  cursor: pointer;
+}
+#bod{
+  background-image: url("download1.avif");
+   background-size: 1800px 1200px;
+}
+body {
+    text-align:center;
+    position:relative;
+
+
+}
+form {
+    display: inline-block;
+    text-align: left;
+    width:1000px;
+    font-weight:bold;
+    position:relative;
+    left:250px;
+
+}
+.button {
+  background-color:#FF7F50;
+  border: none;
+  color: white;
+  padding: 8px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 3px 2px;
+  cursor: pointer;
+  position: relative;
+  top: 49px;
+  left: -365px;
+}
+.button1 {
+  background-color:#FF7F50;
+  border: none;
+  color: white;
+  padding: 8px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 3px 2px;
+  cursor: pointer;
+  position: relative;
+  top: 2px;
+  left: -1px;
+}
+#submit1 {
+  width: 100%;
+  background-color:#FFFF8F;
+  color: black;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight:bold;
+}

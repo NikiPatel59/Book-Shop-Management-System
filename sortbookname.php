@@ -1,0 +1,16 @@
+<?php
+ include('connection.php');
+ $sql = "SELECT book_name FROM book ORDER BY book_name ASC";
+ $result = $conn->query($sql);
+ 
+  if ($result == true){
+  while ($row = mysqli_fetch_array($result)) {
+    echo "<tr>";
+    echo "<td>" . $row['book_name'] . "</td>";
+    echo "</tr>";
+ }
+}
+ else {
+  echo "Failed";
+}
+?>

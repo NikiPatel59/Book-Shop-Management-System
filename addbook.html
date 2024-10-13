@@ -1,0 +1,33 @@
+<?php
+include_once("topnavigation.html");
+?>
+<html>
+ <head><link rel="stylesheet" href="books.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
+  <script src="addbookvalidate.js"></script>
+  <script src="search.js"></script>
+ </head>
+
+  <body id = "bod">
+   <form method="post" action="addbook.php" id="book">
+    <div id = "act">
+
+     <label for="bookname">Book Name</label>
+     <input type="text" name="bookname" id="bookname"><br>
+
+     <label for="authorname">Author Name</label>
+     <input type="text" name="authorname" id="authorname"><br>
+
+     <label for="price">Price</label>
+     <input type="text" name="price" id="price"><br>
+
+     <label for="quantity">Quantity</label>
+     <input type="text" name="quantity" id="quantity"><br>
+
+     <input type="submit" name="submit" id="submit">
+   </div>
+
+   </form>
+  </body>
+</html>

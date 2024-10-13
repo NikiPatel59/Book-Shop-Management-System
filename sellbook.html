@@ -1,0 +1,53 @@
+<?php
+include("connection.php");
+  $sql = "select author from book";
+  $all_author = $conn->query($sql);
+include_once("topnavigation.html");
+
+?>
+<html>
+ <head> <link rel="stylesheet" href="books.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+   <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
+   <script src="authordropdown.js"></script>
+   <script src="validatequantity.js"></script>
+ </head>
+
+  <body id="bod">
+   <form method = "post" id = "sellbook">
+    <div id = "act">
+
+       <label for = "author">Author</label>
+       <select name = "author" id = "author" required>
+       <?php
+          while($authorname = mysqli_fetch_array($all_author,MYSQLI_ASSOC))
+          {
+         ?>
+           <option value = "<?php echo $authorname["author"]; ?>">
+          <?php echo $authorname["author"]; ?>
+           </option>
+          <?php
+          }
+          ?>
+          </select><br>
+
+       <label for = "book">Books</label>
+       <select name = "book" id = "book" required>
+       <option></option>
+       </select><br>
+
+       <div id = "pric"></div>
+       <label for = "price">Price</label>
+       <input type = "text" name="price" id="price"><br>
+
+       <div id = "quan"></div>
+       <label for = "quantity">Quantity</label>
+       <input type = "text" name="quantity" id="quantity">
+
+       <button type="button" id="submit1" name="submit1">Sell</button>
+       
+    </form>
+   </div>
+  </body>
+</html>
+

@@ -1,0 +1,47 @@
+<?php
+ include_once("topnavigation.html");
+ include("connection.php");
+ $sql = "select * from book";
+ $resultt = $conn->query($sql);
+?>
+<html>
+ <head><link rel="stylesheet" href="books.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+ <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
+ <script src="search.js"></script></head>
+
+  <body id = "bod">
+
+  <form>
+   <input type="text" placeholder="Search.." name="searchbox" id="searchbox">
+   <button type="button" id="search" name="search" class="button1">Search</button>
+  </form>
+
+  <input type="button" class="button" onclick="location.href = 'addbook.html';" value="Add Book" />
+
+   <table border="1">
+   <tr>
+   <div id = "hov">
+   <th id="booknamehead">Book Name</button></th>
+   <th id="authorhead">Author</button></th>
+   <th id="pricehead">Price</button></th>
+   <th id="quantityhead">Number of Copy Available</button></th>
+   </div>
+   </tr>
+       <tbody id ="TextBoxContainer">
+   <?php
+    while($row=mysqli_fetch_array($resultt)){
+    ?>
+    <tr id="rows">
+    <td id="booknames"><?php echo $row["book_name"]?></td>
+    <td><?php echo $row["author"]?></td>
+    <td><?php echo $row["book_price"]?></td>
+    <td><?php echo $row["book_quantity"]?></td>
+    </tr>
+    <?php
+    }
+    ?>
+    </tbody>
+   </table>
+  </body>
+</html>
